@@ -1,2 +1,12 @@
-(/ (expt 10 (+ 11.8 (* 1.5 8.25)))
-(expt 31.6 (- 8.25 5.0)))
+(define (first a-list)
+  (car a-list))
+
+(define (rest a-list)
+  (cdr a-list))
+
+(define (second a-list)
+  (first (rest a-list)))
+
+(define b "b")
+
+(list-ref '(a  b 4  c d) 4)
